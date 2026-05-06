@@ -1,0 +1,230 @@
+.investor-charter-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--bg-cream) 0%, var(--bg-white) 100%);
+  padding: 2rem;
+}
+
+.charter-header {
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-green);
+}
+
+.back-link {
+  color: var(--primary-green);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: var(--dark-green);
+}
+
+.charter-header h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  color: var(--primary-green);
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+}
+
+.charter-header h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
+  color: var(--accent-gold);
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.charter-header h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  color: var(--text-dark);
+  margin: 0;
+  font-weight: 600;
+}
+
+.charter-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--text-medium);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.charter-content section {
+  margin-bottom: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-light);
+}
+
+.charter-content h4 {
+  color: var(--primary-green);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  margin: 0 0 1.5rem 0;
+  font-weight: 700;
+  border-bottom: 2px solid var(--accent-gold);
+  padding-bottom: 0.5rem;
+}
+
+.charter-content h5 {
+  color: var(--primary-green);
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.75rem 0;
+  font-weight: 600;
+}
+
+.charter-content h5:first-child {
+  margin-top: 0;
+}
+
+.charter-content ul {
+  margin: 0 0 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.charter-content li {
+  margin-bottom: 0.5rem;
+}
+
+.charter-content p {
+  margin-bottom: 1rem;
+}
+
+.charter-content a {
+  color: var(--primary-green);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.charter-content a:hover {
+  color: var(--dark-green);
+}
+
+.section-content {
+  margin-top: 1rem;
+}
+
+.disclosure-section {
+  background: var(--bg-cream);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-gold);
+  margin-top: 1.5rem;
+}
+
+.complaint-modes {
+  margin-top: 1rem;
+}
+
+.complaint-modes h5 {
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+.rights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.rights-column {
+  background: var(--bg-cream);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-green);
+}
+
+.rights-column h5 {
+  color: var(--primary-green);
+  margin-top: 0;
+}
+
+.responsibilities-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.responsibilities-column {
+  background: var(--bg-cream);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.responsibilities-column:first-child {
+  border-left: 4px solid var(--primary-green);
+}
+
+.responsibilities-column:last-child {
+  border-left: 4px solid var(--accent-gold);
+}
+
+.responsibilities-column h5 {
+  color: var(--primary-green);
+  margin-top: 0;
+}
+
+.responsibilities-column:last-child h5 {
+  color: var(--accent-gold);
+}
+
+.responsibilities-column ol {
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.responsibilities-column li {
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .investor-charter-page {
+    padding: 1rem;
+  }
+  
+  .charter-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .charter-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .charter-header h3 {
+    font-size: 1.1rem;
+  }
+  
+  .charter-content section {
+    padding: 1.5rem;
+  }
+  
+  .rights-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .responsibilities-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .charter-content h4 {
+    font-size: 1.3rem;
+  }
+  
+  .charter-content h5 {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,37 @@
+:root {
+  --primary-green: #06715C;
+  --dark-green: #055a48;
+  --accent-gold: #CFAE45;
+  --light-gold: #E0C55A;
+  --dark-gold: #B8962E;
+  --text-dark: #212121;
+  --text-medium: #455A64;
+  --text-muted: #757575;
+  --bg-cream: #FDF9F3;
+  --bg-white: #FFFFFF;
+  --border-light: #EEEEEE;
+
+  font-family: 'DM Sans', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-dark);
+  background-color: var(--bg-cream);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+}

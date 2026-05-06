@@ -1,0 +1,180 @@
+.delete-account-page {
+  min-height: 100vh;
+  background: var(--bg-cream, #FDF9F3);
+}
+
+.delete-header {
+  background: linear-gradient(180deg, rgba(6, 113, 92, 0.95) 0%, rgba(6, 113, 92, 0.85) 100%);
+  padding: 1rem 2rem;
+}
+
+.delete-header .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+
+.delete-header .logo svg {
+  width: 24px;
+  height: 24px;
+}
+
+.delete-main {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.delete-main h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.75rem;
+  color: var(--text-dark, #212121);
+  margin: 0 0 0.5rem;
+}
+
+.delete-intro {
+  color: var(--text-medium, #455A64);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.delete-form label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.delete-form input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid var(--border-light, #EEEEEE);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background: white;
+}
+
+.delete-form input:focus {
+  outline: none;
+  border-color: var(--primary-green, #06715C);
+  box-shadow: 0 0 0 3px rgba(6, 113, 92, 0.15);
+}
+
+.delete-btn {
+  width: 100%;
+  padding: 0.875rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  background: linear-gradient(135deg, var(--primary-green) 0%, #055a48 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.delete-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(6, 113, 92, 0.3);
+}
+
+.delete-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.delete-btn-danger {
+  background: linear-gradient(135deg, #c62828 0%, #b71c1c 100%);
+}
+
+.delete-btn-danger:hover:not(:disabled) {
+  box-shadow: 0 6px 20px rgba(198, 40, 40, 0.3);
+}
+
+.delete-link-btn {
+  display: block;
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--primary-green);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.delete-link-btn:hover {
+  text-decoration: underline;
+}
+
+.delete-warning {
+  background: rgba(198, 40, 40, 0.08);
+  border: 1px solid rgba(198, 40, 40, 0.2);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.delete-warning p,
+.delete-warning ul {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.delete-warning ul {
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.delete-error {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: rgba(229, 57, 53, 0.1);
+  color: #c62828;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.delete-success {
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.delete-success h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.75rem;
+  color: var(--primary-green);
+  margin: 0 0 0.75rem;
+}
+
+.delete-success p {
+  color: var(--text-medium);
+  margin-bottom: 1.5rem;
+}
+
+.delete-back-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary-green);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: transform 0.2s;
+}
+
+.delete-back-link:hover {
+  transform: translateY(-1px);
+}
