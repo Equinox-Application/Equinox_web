@@ -76,7 +76,7 @@ const disclaimers = [
         </thead>
         <tbody>
           <tr>
-            <td>1</td>
+            <td>0</td>
             <td>Directly from Investors</td>
             <td>0</td>
             <td>0</td>
@@ -89,9 +89,9 @@ const disclaimers = [
             <td>2</td>
             <td>SEBI Scores</td>
             <td>0</td>
-            <td>1</td>
             <td>0</td>
-            <td>1</td>
+            <td>0</td>
+            <td>0</td>
             <td>0</td>
             <td>0</td>
           </tr>
@@ -140,22 +140,6 @@ const disclaimers = [
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>April, 2025</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>May, 2025</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>1</td>
-          </tr>
           <tr>
             <td>3</td>
             <td>January, 2026</td>
@@ -221,7 +205,7 @@ const disclaimers = [
         </thead>
         <tbody>
           <tr>
-            <td>1</td>
+            <td>0</td>
             <td>2021-22</td>
             <td>0</td>
             <td>0</td>
@@ -236,31 +220,7 @@ const disclaimers = [
             <td>0</td>
             <td>0</td>
           </tr>
-          <tr>
-            <td>3</td>
-            <td>2023-24</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>2024-25</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr class="grand-total">
-            <td>Grand Total</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
+                  </tbody>
       </table>
     </div>`
   },
@@ -327,6 +287,70 @@ const disclaimers = [
         
         <p>This advisory is issued in compliance with regulatory requirements and in the interest of transparent communication with the public.</p>
       </div>
+    </div>`
+  },
+  {
+    id: 4,
+    title: 'Compliance Audit Status',
+    content: `<div class="disclaimer-content">
+      <h3>Compliance Audit Status</h3>
+      <p>As communicated by BSE to all RAs, Compliance audit status is to be displayed on your website. The same be added in any page of your choice.</p>
+      
+      <p>Disclosure with respect to compliance with Annual compliance audit requirement under Regulation 25(3) of SEBI (Research Analyst) Regulations, 2014 for last financial years are as under:</p>
+      
+      <table class="complaint-table">
+        <thead>
+          <tr>
+            <th>Sr. No.</th>
+            <th>Financial Year</th>
+            <th>Compliance Audit Status</th>
+            <th>Remarks, If any</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>FY 2023-24</td>
+            <td>Conducted</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>FY 2024-25</td>
+            <td>Conducted</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>`
+  },
+  {
+    id: 5,
+    title: 'Grievance Mechanism for PwD',
+    content: `<div class="disclaimer-content">
+      <h3>Grievance Redressal Mechanism for Persons with Disabilities</h3>
+      
+      <p>In compliance with the SEBI circular, Equinox Research & Advisors has established a dedicated grievance redressal mechanism to address accessibility-related complaints from persons with disabilities (PwDs).</p>
+      
+      <h4>1. Dedicated Channels</h4>
+      <ul>
+        <li><strong>Email:</strong> prandad@gmail.com</li>
+        <li><strong>Helpline:</strong> +91-8308266666 (operational Mon–Fri, 9:30 AM – 6:00 PM)</li>
+        <li><strong>Web Form:</strong> Available on www.equinoxresearch.in/accessibility</li>
+      </ul>
+      
+      <h4>2. Process</h4>
+      <ul>
+        <li>All accessibility-related grievances will be acknowledged within 2 working days.</li>
+        <li>Resolution/response will be provided within 15 working days.</li>
+        <li>Complex issues requiring longer timelines will be communicated clearly to the complainant.</li>
+      </ul>
+      
+      <h4>3. Escalation Matrix</h4>
+      <p><strong>Level 1: Nodal Officer</strong><br>
+      Mr. Pankaj Randad<br>
+      Email: prandad@gmail.com<br>
+      Contact: +91-8308266666</p>
     </div>`
   }
 ];

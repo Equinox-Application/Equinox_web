@@ -159,6 +159,14 @@ function App() {
     {
       id: 3,
       title: 'Research Analyst Disclaimer and Disclosure',
+    },
+    {
+      id: 4,
+      title: 'Compliance Audit Status',
+    },
+    {
+      id: 5,
+      title: 'Grievance Mechanism for PwD',
     }
   ];
 
@@ -417,6 +425,7 @@ function App() {
               <div className="link-column">
                 <a href="/privacy">Privacy Policy</a>
                 <a href="/refund">Refund Policy</a>
+                <a href="https://smartodr.in/login" target="_blank" rel="noopener noreferrer">ODR Portal</a>
                 <Link to="/delete-account" className="footer-link">Delete my account</Link>
               </div>
             </div>
