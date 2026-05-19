@@ -1,11 +1,11 @@
 steps:
   # Build the container image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/conductive-ward-485009-u9/equinox-web', '.']
+    args: ['build', '-t', 'gcr.io/equinox-496408/equinox-web', '.']
   
   # Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/conductive-ward-485009-u9/equinox-web']
+    args: ['push', 'gcr.io/equinox-496408/equinox-web']
   
   # Deploy to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
@@ -14,8 +14,8 @@ steps:
       - 'run'
       - 'deploy'
       - 'equinox-web'
-      - '--image=gcr.io/conductive-ward-485009-u9/equinox-web'
-      - '--region=asia-south1'
+      - '--image=gcr.io/equinox-496408/equinox-web'
+      - '--region=asia-east11'
       - '--platform=managed'
       - '--allow-unauthenticated'
       - '--port=80'
@@ -25,4 +25,4 @@ steps:
       - '--max-instances=10'
 
 images:
-  - 'gcr.io/conductive-ward-485009-u9/equinox-web'
+  - 'gcr.io/equinox-496408/equinox-web'

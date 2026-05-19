@@ -183,7 +183,9 @@ function App() {
           </div>
           <div className="top-bar-item">
             <IconMail />
-            <span>support@equinoxresearch.in</span>
+            <a href="mailto:admin@equinoxresearch.in" style={{ color: 'inherit', textDecoration: 'none' }}>
+              admin@equinoxresearch.in
+            </a>
           </div>
           <div className="top-bar-item">
             <IconClock />
@@ -358,7 +360,7 @@ function App() {
                 <IconMail />
               </div>
               <h4>Email us</h4>
-              <a href="mailto:support@equinoxresearch.in">support@equinoxresearch.in</a>
+              <a href="mailto:admin@equinoxresearch.in">admin@equinoxresearch.in</a>
               <a href="mailto:prandad@gmail.com">prandad@gmail.com</a>
             </div>
             

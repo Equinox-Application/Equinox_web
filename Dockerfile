@@ -7,8 +7,8 @@ WORKDIR /app
 # Copy package.json and package-lock.json (if available)
 COPY package*.json ./
 
-# Install dependencies
-RUN npm ci --only=production
+# Install dependencies (including dev dependencies for build)
+RUN npm ci
 
 # Copy the rest of the application code
 COPY . .
@@ -21,6 +21,10 @@ FROM nginx:alpine
 
 # Copy built assets from builder stage
 COPY --from=builder /app/dist /usr/share/nginx/html
+
+# Ensure nginx can read files (permissions fix for Alpine)
+RUN chown -R nginx:nginx /usr/share/nginx/html && \
+    chmod -R 755 /usr/share/nginx/html
 
 # Copy nginx configuration
 COPY nginx.conf /etc/nginx/nginx.conf

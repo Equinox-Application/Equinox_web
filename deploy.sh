@@ -1,7 +1,17 @@
 #!/bin/bash
 
+
+
+gcloud run deploy equinox-web-user \
+  --source . \
+  --platform managed \
+  --region asia-east1 \
+  --allow-unauthenticated \
+  --port 80 \
+  --memory 256Mi \
+  --cpu 0.5
 # Google Cloud Run Deployment Script for Equinox Web Application
-# Project: conductive-ward-485009-u9
+# Project: equinox-496408
 
 echo "🚀 Starting deployment of Equinox Web Application to Google Cloud Run..."
 
@@ -19,9 +29,22 @@ if ! gcloud auth list --filter=status:ACTIVE --format="value(account)" | grep -q
     exit 1
 fi
 
+PROJECT_ID="equinox-496408"
+BACKEND_DIR="/Users/kvid/Desktop/Equinox/Backend/Equinox-backend"
+
 # Set the project
-echo "📋 Setting project to conductive-ward-485009-u9..."
-gcloud config set project conductive-ward-485009-u9
+echo "📋 Setting project to $PROJECT_ID..."
+gcloud config set project "$PROJECT_ID"
+
+# Deploy backend first
+if [ -d "$BACKEND_DIR" ]; then
+    echo "📦 Deploying backend from $BACKEND_DIR..."
+    pushd "$BACKEND_DIR" >/dev/null
+    ./scripts/deploy-cloudrun.sh
+    popd >/dev/null
+else
+    echo "⚠️ Backend directory not found: $BACKEND_DIR"
+fi
 
 # Enable required APIs
 echo "🔧 Enabling required APIs..."
