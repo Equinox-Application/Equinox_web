@@ -1,4 +1,4 @@
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://equinox-backend-337722237790.asia-south1.run.app';
 
 /**
  * Generate a revlu group token with group UUID, user UUID, and timestamps

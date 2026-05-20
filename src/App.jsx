@@ -369,8 +369,7 @@ function App() {
                 <IconClock />
               </div>
               <h4>Work Hours</h4>
-              <p>Monday - Saturday: 9am - 7pm</p>
-              <p>Sunday: 12pm — 6pm</p>
+              <p>Monday - Friday: 9am - 7pm</p>
             </div>
           </div>
         </div>
