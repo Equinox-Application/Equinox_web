@@ -1,7 +1,9 @@
 .disclaimer-page {
-  min-height: 100vh;
+  height: 100vh;
+  overflow-y: auto;
   background: linear-gradient(180deg, var(--bg-cream) 0%, var(--bg-white) 100%);
   padding: 2rem;
+  box-sizing: border-box;
 }
 
 .disclaimer-header {
@@ -37,8 +39,37 @@
   max-width: 1200px;
   margin: 0 auto;
   color: var(--text-medium);
-  font-size: 1.05rem;
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.disclaimer-body h3 {
+  color: var(--primary-green);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem 0;
+}
+
+.disclaimer-body h4 {
+  color: var(--text-dark);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.5rem 0;
+}
+
+.disclaimer-body ul {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+}
+
+.disclaimer-body li {
+  margin-bottom: 0.4rem;
+  line-height: 1.6;
+}
+
+.disclaimer-body p {
+  margin-bottom: 1rem;
+  text-align: justify;
 }
 
 /* Grievance Table Styles */
@@ -195,9 +226,14 @@
 }
 
 /* Disclaimer Content Styles */
+.disclaimer-content {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
 .disclaimer-content p {
-  margin-bottom: 1.5rem;
-  line-height: 1.8;
+  margin-bottom: 1rem;
+  text-align: justify;
 }
 
 .disclosure-section {
@@ -211,15 +247,15 @@
 .disclosure-section h3 {
   color: var(--primary-green);
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.5rem;
-  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+  margin: 0 0 0.75rem 0;
   font-weight: 700;
 }
 
 .disclosure-section h4 {
   color: var(--primary-green);
-  font-size: 1.1rem;
-  margin: 1.5rem 0 0.5rem 0;
+  font-size: 1rem;
+  margin: 1.25rem 0 0.5rem 0;
   font-weight: 600;
 }
 

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 import FraudAlert from './components/FraudAlert';
@@ -95,6 +95,8 @@ function IconLive() {
   );
 }
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://equinox-backend-337722237790.asia-south1.run.app';
+
 const features = [
   {
     icon: IconSchool,
@@ -125,6 +127,42 @@ const features = [
 
 function App() {
   const [activeBlog, setActiveBlog] = useState(null);
+  const [liveStreamUrl, setLiveStreamUrl] = useState('');
+  const [loadingLiveStream, setLoadingLiveStream] = useState(true);
+
+  useEffect(() => {
+    fetchLiveStreamUrl();
+  }, []);
+
+  const fetchLiveStreamUrl = async () => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/config/live-stream-url`);
+      if (response.ok) {
+        const data = await response.json();
+        if (data.url && data.url.trim()) {
+          setLiveStreamUrl(data.url);
+        }
+      }
+    } catch (error) {
+      console.error('Error fetching live stream URL:', error);
+    } finally {
+      setLoadingLiveStream(false);
+    }
+  };
+
+  const getEmbedUrl = (url) => {
+    if (!url) return null;
+    // Convert YouTube watch URL to embed URL
+    if (url.includes('youtube.com/watch?v=')) {
+      const videoId = url.split('v=')[1]?.split('&')[0];
+      return videoId ? `https://www.youtube.com/embed/${videoId}` : null;
+    }
+    if (url.includes('youtu.be/')) {
+      const videoId = url.split('youtu.be/')[1]?.split('?')[0];
+      return videoId ? `https://www.youtube.com/embed/${videoId}` : null;
+    }
+    return url;
+  };
 
   const blogs = [
     {
@@ -293,6 +331,25 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* Live Stream Section */}
+      {!loadingLiveStream && liveStreamUrl && getEmbedUrl(liveStreamUrl) && (
+        <section className="livestream-section">
+          <div className="livestream-content">
+            <h2>Live Market Analysis</h2>
+            <p className="livestream-subtitle">Watch real-time market insights and trading sessions</p>
+            <div className="livestream-container">
+              <iframe
+                src={getEmbedUrl(liveStreamUrl)}
+                title="Live Market Stream"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="features">
         <h2>What Equinox Offers</h2>

@@ -1502,4 +1502,57 @@
   .features {
     padding: 3rem 1rem;
   }
+
+  .livestream-section {
+    padding: 3rem 1rem;
+  }
+
+  .livestream-content h2 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Live Stream Section */
+.livestream-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, var(--dark-green) 0%, var(--primary-green) 100%);
+  color: white;
+}
+
+.livestream-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.livestream-content h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.livestream-subtitle {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+}
+
+.livestream-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.livestream-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
