@@ -256,7 +256,7 @@ function App() {
           <img src="/images/hero-banner.png" alt="Equinox Trading Platform" className="hero-img" onError={(e) => { e.target.style.display = 'none'; }} />
         </div>
         <div className="hero-content">
-          <h1>Your Trading & Investment Education Platform</h1>
+          <h1>Your Advisory Platform</h1>
           <p className="hero-tagline">
             Learn, connect, and grow. Equinox brings together courses, communities, and stock recommendations to help you make informed decisions.
           </p>
