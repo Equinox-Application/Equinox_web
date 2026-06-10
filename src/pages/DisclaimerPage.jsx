@@ -136,58 +136,94 @@ const disclaimers = [
             <th>Carried forward from previous month</th>
             <th>Received</th>
             <th>Resolved*</th>
-            <th>Pending#</th>
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td>1</td>
+            <td>May, 2025</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>June, 2025</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
             <td>3</td>
-            <td>January, 2026</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
+            <td>July, 2025</td>
+            <td>2</td>
+            <td>1</td>
             <td>0</td>
           </tr>
           <tr>
             <td>4</td>
-            <td>February, 2026</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
+            <td>August, 2025</td>
+            <td>3</td>
+            <td>1</td>
             <td>0</td>
           </tr>
           <tr>
             <td>5</td>
-            <td>March, 2026</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
+            <td>September, 2025</td>
+            <td>4</td>
+            <td>1</td>
+            <td>1</td>
           </tr>
           <tr>
             <td>6</td>
-            <td>April, 2026</td>
-            <td>0</td>
-            <td>0</td>
+            <td>October, 2025</td>
+            <td>4</td>
             <td>0</td>
             <td>0</td>
           </tr>
           <tr>
             <td>7</td>
-            <td>May, 2026</td>
-            <td>0</td>
-            <td>0</td>
+            <td>November, 2025</td>
+            <td>4</td>
             <td>0</td>
             <td>0</td>
           </tr>
-          <tr class="grand-total">
-            <td>Grand Total</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+          <tr>
+            <td>8</td>
+            <td>December, 2025</td>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
           </tr>
+          <tr>
+            <td>9</td>
+            <td>January, 2026</td>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>February, 2026</td>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>March, 2026</td>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>April, 2026</td>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+
         </tbody>
       </table>
 
