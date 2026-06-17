@@ -223,7 +223,12 @@ const disclaimers = [
             <td>0</td>
             <td>0</td>
           </tr>
-
+          <tr class="grand-total">
+            <td colspan="2">Grand Total - Resolved 1, Total Pending 0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
         </tbody>
       </table>
 

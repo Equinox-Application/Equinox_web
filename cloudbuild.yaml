@@ -15,7 +15,7 @@ steps:
       - 'deploy'
       - 'equinox-web'
       - '--image=gcr.io/equinox-496408/equinox-web'
-      - '--region=asia-east11'
+      - '--region=asia-east1'
       - '--platform=managed'
       - '--allow-unauthenticated'
       - '--port=80'
