@@ -110,7 +110,7 @@ const FraudAlert = () => {
                 <strong>Website:</strong> www.equinoxresearch.in
               </div>
               <div className="contact-item">
-                <strong>Telephone:</strong> +91 83082 66666
+                <strong>Telephone:</strong> +91 79722 60533
               </div>
             </div>
           </div>

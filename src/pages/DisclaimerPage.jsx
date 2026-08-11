@@ -22,7 +22,7 @@ const disclaimers = [
             <td>Head of Customer Care</td>
             <td>Pankaj R Randad</td>
             <td>Equinox Research And Advisors Office No 8, 3rd Floor, Himagauri Sunanda Apartment, Above KFC Outlet, Karishma Chauk, Kothrud, 411038.</td>
-            <td>+91 83082 66666</td>
+            <td>+91 79722 60533</td>
             <td>prandad@gmail.com</td>
             <td>10 AM to 4 PM</td>
           </tr>
@@ -30,7 +30,7 @@ const disclaimers = [
             <td>Customer Support</td>
             <td>Pankaj R Randad</td>
             <td>Equinox Research And Advisors Office No 8, 3rd Floor, Himagauri Sunanda Apartment, Above KFC Outlet, Karishma Chauk, Kothrud, 411038.</td>
-            <td>+91 83082 66666</td>
+            <td>+91 79722 60533</td>
             <td>prandad@gmail.com</td>
             <td>10 AM to 4 PM</td>
           </tr>
@@ -38,7 +38,7 @@ const disclaimers = [
             <td>Compliance Officer</td>
             <td>Pankaj R Randad</td>
             <td>Equinox Research And Advisors Office No 8, 3rd Floor, Himagauri Sunanda Apartment, Above KFC Outlet, Karishma Chauk, Kothrud, 411038.</td>
-            <td>+91 83082 66666</td>
+            <td>+91 79722 60533</td>
             <td>prandad@gmail.com</td>
             <td>10 AM to 4 PM</td>
           </tr>
@@ -289,7 +289,7 @@ const disclaimers = [
           <h4>Contact Information:</h4>
           <p><strong>Email:</strong> prandad@gmail.com<br>
           <strong>Website:</strong> equinoxresearch.in<br>
-          <strong>Telephone:</strong> +91 83082 66666</p>
+          <strong>Telephone:</strong> +91 79722 60533</p>
         </div>
         
         <div class="important-info">
@@ -376,7 +376,7 @@ const disclaimers = [
       <h4>1. Dedicated Channels</h4>
       <ul>
         <li><strong>Email:</strong> prandad@gmail.com</li>
-        <li><strong>Helpline:</strong> +91-8308266666 (operational Mon–Fri, 9:30 AM – 6:00 PM)</li>
+        <li><strong>Helpline:</strong> +91-7972260533 (operational Mon–Fri, 9:30 AM – 6:00 PM)</li>
         <li><strong>Web Form:</strong> Available on www.equinoxresearch.in/accessibility</li>
       </ul>
       
@@ -391,7 +391,7 @@ const disclaimers = [
       <p><strong>Level 1: Nodal Officer</strong><br>
       Mr. Pankaj Randad<br>
       Email: prandad@gmail.com<br>
-      Contact: +91-8308266666</p>
+      Contact: +91-7972260533</p>
     </div>`
   }
 ];

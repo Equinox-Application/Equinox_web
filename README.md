@@ -113,5 +113,5 @@ This project is proprietary software of Equinox Research & Advisors.
 ## 📞 Contact
 
 - **Email**: prandad@gmail.com
-- **Phone**: +91 83082 66666
+- **Phone**: +91 79722 60533
 - **Website**: equinoxresearch.in

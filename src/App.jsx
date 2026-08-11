@@ -217,7 +217,7 @@ function App() {
         <div className="top-bar-content">
           <div className="top-bar-item">
             <IconPhone />
-            <span>(+91) 8308266666</span>
+            <span>(+91) 7972260533</span>
           </div>
           <div className="top-bar-item">
             <IconMail />
@@ -401,7 +401,7 @@ function App() {
                 <IconPhone />
               </div>
               <h4>Call the helpline</h4>
-              <a href="tel:+918308266666">(+91) 8308266666</a>
+              <a href="tel:+917972260533">(+91) 7972260533</a>
             </div>
             
             <div className="contact-card">
